@@ -78,3 +78,13 @@ then
 else
   echo "SAPA nice one"
 fi
+
+
+# make a directory and a file inside of it, echo a text inside of the file
+#and cat it out
+
+mkdir newball
+cd newball
+touch newball.txt
+echo "new ball file" >> newball.txt
+cat newball.txt
