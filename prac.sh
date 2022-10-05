@@ -57,3 +57,24 @@ do
 done
 
 #conditionals; if statements
+networth=5
+
+if [ "$networth" -eq 5 ]
+then
+  echo "i'm rich"
+
+else
+  echo "SAPA nice one"
+fi
+
+#conditionals; if else statements
+
+if [ "$networth" -ge 10 ]
+then
+  echo "i'm broke mehnnn"
+elif [ "$networth" -le 5 ]
+then
+  echo "i've got to work harder"
+else
+  echo "SAPA nice one"
+fi
