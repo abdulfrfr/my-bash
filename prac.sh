@@ -97,6 +97,9 @@ echo "$1 $2"
 
 sec_function "Hello " "World!"
 
+
+#function with expressions inside of them
+
 function cond_function(){
 if [ "$1" == "Hello" ]
 then
