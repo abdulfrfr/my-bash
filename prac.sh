@@ -80,11 +80,48 @@ else
 fi
 
 
+# functions
+
+function first_function(){
+echo "my first function"
+}
+
+#calling the function; just write out the name of the functiona and that's it
+first_function
+
+#function with parameters
+
+function sec_function(){
+echo "$1 $2"
+}
+
+sec_function "Hello " "World!"
+
+function cond_function(){
+if [ "$1" == "Hello" ]
+then
+  echo "$1"
+elif [ "$2" == "World" ]
+then
+  echo "$2"
+else
+  read -p "what do you want to say?" answer
+  echo "$answer"
+
+fi
+}
+
+cond_function "Hello" "World"
+
 # make a directory and a file inside of it, echo a text inside of the file
-#and cat it out
+#and cat it out, after that delete file and directory
 
 mkdir newball
 cd newball
 touch newball.txt
 echo "new ball file" >> newball.txt
 cat newball.txt
+
+rm newball.txt
+cd ..
+rmdir newball
